@@ -12,3 +12,10 @@ def char_count(inputString):
             charDictionary[workingString[i]] = 1
     return charDictionary
 
+def dictionary_sort(inputDictionary):
+    sortedList = list(inputDictionary.items())
+    sortedList.sort(reverse=True, key=list_sort)
+    return sortedList
+
+def list_sort(keyIn):
+    return keyIn[1]
